@@ -1,0 +1,3 @@
+sudo apt-get install phpmyadmin -y -> Press OK bty tabbing through -> 
+Press Yes to configure database for phpmyadmin with dbconfig-common-> 
+Set up Password

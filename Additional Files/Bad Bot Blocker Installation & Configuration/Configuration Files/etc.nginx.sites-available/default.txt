@@ -1,0 +1,32 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	
+	root /var/www/html;
+	
+	index index.php index.html index.htm index.nginx-debian.html
+	
+	server_name _;
+	
+	##
+	# Nginx Bad Bot Blocker Includes
+	# REPO: https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
+	##
+	include /etc/nginx/bots.d/ddos.conf;
+	include /etc/nginx/bots.d/blockbots.conf;
+	
+	location / {
+		try_files $uri $uri/ =404;
+	
+	}
+	
+	location ~ \.php$ {
+	try_files $fastcgi_script_name =404;
+	include fastcgi_params;
+	fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+	fastcgi_index index.php;
+	fastcgi_param DOCUMENT_ROOT $realpath_root;
+	fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+	}
+
+}

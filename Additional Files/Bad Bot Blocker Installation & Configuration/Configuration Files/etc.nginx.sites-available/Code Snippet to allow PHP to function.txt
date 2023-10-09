@@ -1,0 +1,11 @@
+The following lines of codes are a part of the /etc/nginx/sites-available/default file
+which were added in after the installation of PHP:
+
+location ~ \.php$ {
+	try_files $fastcgi_script_name =404;
+	include fastcgi_params;
+	fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+	fastcgi_index index.php;
+	fastcgi_param DOCUMENT_ROOT $realpath_root;
+	fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+}

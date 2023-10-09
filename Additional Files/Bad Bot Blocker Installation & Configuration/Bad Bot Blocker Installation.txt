@@ -1,0 +1,9 @@
+Use the following code on a Debian-based Linux distribution using the APT package manager to install the Ultimate Nginx Bad Bot Blocker:
+
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/install-ngxblocker -O /usr/local/sbin/install-ngxblocker
+sudo chmod +x /usr/local/sbin/install-ngxblocker
+sudo install-ngxblocker -x
+sudo chmod +x /usr/local/sbin/setup-ngxblocker
+sudo chmod +x /usr/local/sbin/update-ngxblocker
+sudo setup-ngxblocker -x -> Press Yes for the *default* file
+sudo /usr/local/sbin/update-ngxblocker

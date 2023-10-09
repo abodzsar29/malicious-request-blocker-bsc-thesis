@@ -1,0 +1,12 @@
+sudo apt-get install software-properties-common dirmngr apt-transport-https -y
+
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+
+sudo add-apt-repository 'deb [arch=amd64,i386,arm64,ppc64el] [https://mirrors.xtom.nl/mariadb/repo/10.7/debian](https://mirrors.xtom.nl/mariadb/repo/10.7/debian) bullseye main'
+
+sudo apt-get install mariadb-server -y
+
+mysql_secure_installation -> Yes for Switch to unix_socket authentication -> 
+No for changing the root user password -> Yes for removing anonymous users -> 
+Yes for disallowing root login remotely -> Yes for removing test database -> 
+Yes for reloading privilege tables
