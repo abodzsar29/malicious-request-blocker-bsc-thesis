@@ -1,3 +1,11 @@
+<h2> Andrew Bodzsar - 25.4.2022
+
+Modified the Ultimate Nginx Bad Bot Blocker (https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/) created by Mitchell Krog (github.com/mitchellkrogza) to respond to malicious bad bot requests with a custom file. 
+
+The PHP file contained values from a MySQLi database which changed at a specified time interval. The purpose of the constantly changing values was to simulate a front-end website providing up to date quantitative data (e.g.: stock prices, flight ticket prices etc.).
+
+Readme file from the forked repository: </h2>
+
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/_logo_nginx_bad_bot_blocker.png" alt="Nginx Ultimate Bad Bot Spam Referrer Blocker - Nginx Block Bad Bots, Vulnerability Scanners, Malware and Adware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker with DDOS, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/>
 
 <table>
@@ -14,9 +22,9 @@
 ##### The Ultimate Nginx Bad Bot, User-Agent, Spam Referrer Blocker, Adware, Malware and Ransomware Blocker, Clickjacking Blocker, Click Re-Directing Blocker, SEO Companies and Bad IP Blocker with Anti DDOS System, Nginx Rate Limiting and Wordpress Theme Detector Blocking. Stop and Block all kinds of bad internet traffic even Fake Googlebots from ever reaching your web sites. [PLEASE SEE: Definition of Bad Bots](#define-bad-bots)
 
 _______________
-#### Version: V4.2023.10.4044
-#### Bad Referrers Blocked: [7104](https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
-#### Bad User-Agents (Bots) Blocked: [645](https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
+#### Version: V4.2022.06.3185
+#### Bad Referrers Blocked: [7094](https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
+#### Bad User-Agents (Bots) Blocked: [637](https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
 #### Fake Googlebots Blocked: [217](https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)
 ____________________
 
@@ -799,3 +807,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
