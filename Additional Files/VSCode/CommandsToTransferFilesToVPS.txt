@@ -1,0 +1,5 @@
+The following two lines are used in the bash terminal of Visual Studio Code to upload the php files to the server hosting the website, where the system is tested:
+
+
+scp index.php root@213.52.128.13:/var/www/html/
+scp 404.php root@213.52.128.13:/var/www/html/

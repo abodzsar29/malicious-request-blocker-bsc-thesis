@@ -1,3 +1,5 @@
+Use the following code on a Debian-based Linux distribution using the APT package manager to install MariaDB:
+
 sudo apt-get install software-properties-common dirmngr apt-transport-https -y
 
 sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'

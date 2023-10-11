@@ -1,3 +1,5 @@
+Use the following code on a Debian-based Linux distribution using the APT package manager to install phpMyAdmin. phpMyAdmin provides a GUI for the installed MariaDB databases.
+
 sudo apt-get install phpmyadmin -y -> Press OK bty tabbing through -> 
 Press Yes to configure database for phpmyadmin with dbconfig-common-> 
 Set up Password

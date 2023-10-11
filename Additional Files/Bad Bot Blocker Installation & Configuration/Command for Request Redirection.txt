@@ -1,1 +1,7 @@
+The following command will be have to be inserted to the blockbots.conf file in the bots.d folder after the installation of the NginX Bad Bot Blocker has taken place.
+The insertion of this line is required in the place of the "return 444" line under the following sections:
+"BLOCK BAD REFER WORDS"
+"BLOCK BAD REFERERS"
+"BLOCK IP ADDRESSES and RANGES"
+
 rewrite ^/ /404.php;
