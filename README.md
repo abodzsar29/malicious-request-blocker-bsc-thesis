@@ -2,7 +2,11 @@
 
 Modified the Ultimate Nginx Bad Bot Blocker (https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/) created by Mitchell Krog (github.com/mitchellkrogza) to respond to malicious bad bot requests with a custom file. 
 
-The PHP file contained values from a MySQLi database which changed at a specified time interval. The purpose of the constantly changing values was to simulate a front-end website providing up to date quantitative data (e.g.: stock prices, flight ticket prices etc.).
+The main landing webpage, the index.php file displayed values which changed at a specified time interval from a MySQLi database. The purpose of the constantly changing values was to simulate a front-end website providing tick-by-tick quantitative data (e.g.: stock prices, flight ticket prices etc.).
+
+The 404.php file is a clone of the index.php webpage, which contains altered values of the index.php file. These altered values serve the purpose of preventing intelligent web scrapers from identifying that they are being blocked by making them appear realistic.
+
+The available attributes for specifying blocked bots include: Referer, IP address, and User Agent.
 
 Readme file from the forked repository: </h2>
 
