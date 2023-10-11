@@ -1,4 +1,4 @@
-<h2> Andrew Bodzsar - 25.4.2022
+<h2> Andrew Bodzsar - 25.4.2022 - BSc thesis for Computer Security and Forensics at the University of Greenwich
 
 Modified the Ultimate Nginx Bad Bot Blocker (https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/) created by Mitchell Krog (github.com/mitchellkrogza) to respond to malicious bad bot requests with a custom file. 
 
